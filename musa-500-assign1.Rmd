@@ -287,11 +287,9 @@ and 6) each predictor has no less than 10 observations.
 
 #### Choropleth Maps
 
-Present the choropleth maps of the dependent variable and the predictors which you created.
-
-Refer to the maps in the text, and talk about the following:
-
-Which maps look similar? Which maps look different? That is, which predictors do you expect to be strongly associated with the dependent variable based on the visualization? Also, given your examination of the maps, are there any predictors that you think will be strongly inter-correlated? That is, do you expect severe multicollinearity to be an issue here? Discuss this in a paragraph.
+Fig. 3a -- 3e are five choropleth maps created to show values
+of variables in geographical spaces. Note that the values of all variables portrayed
+are the log-transformed.
 
 ```{r choros}
 #lifted from lovelace: https://geocompr.robinlovelace.net/adv-map.html#faceted-maps
@@ -312,6 +310,16 @@ tm_shape(reg_data) +
   tm_facets(nrow = 2, sync = TRUE)
 
 ```
+
+By comparing the graphs, we can see noticeable similarity
+between log of Median House Value (Fig. 3a) and log of percentage of bachelor\'s
+degree (Fig. 3b), and an opposite pattern in log of percentage of vacant homes.
+The relationship between house values (Fig. 3a) with poverty levels (Fig. 3c) or
+with single house units (Fig. 3e) are less straightforward simply by observing
+the maps. Through comparisons of maps of predictors (Fig. 3b, 3c, 3d, and 3e), the
+maps present quite distinct patterns for each variable, therefore, the
+predictors are less likely to be  inter-correlated,
+and there is unlikely multi-collinearity.
 
 #### Correlation Matrix
 
