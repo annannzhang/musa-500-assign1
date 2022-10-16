@@ -279,7 +279,11 @@ Since most of the variables and their residuals are normalized (shown in Figures
   ggarrange(ln_pct_bach, ln_nbelpov, ln_pct_vac, ln_pct_sing)
 ```
 
-State that the other regression assumptions will be examined in a separate section below (Regression Assumption Checks).
+In addition to 1) the linear relationship between dependent variables
+and predictors and 2) normality of residuals, which are achieved by
+log-transformation, we will test several other regression assumptions in later in
+Section 3.3 -- 3) homoscedasticity, 4) independence of observations, 5) no multicollinearity,
+and 6) each predictor has no less than 10 observations.
 
 #### Choropleth Maps
 
